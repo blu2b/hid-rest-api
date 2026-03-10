@@ -1,5 +1,5 @@
 enable it
-```bash
+```
 sudo systemctl daemon-reload
-sudo systemctl enable --now hid-rest.service
+sudo systemctl enable --now hid-rest-api.service
 ```
