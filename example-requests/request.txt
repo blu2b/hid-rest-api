@@ -1,0 +1,7 @@
+curl --request POST \
+  --url http://[RASPBERRYPI_URL]:5000/type \
+  --header 'content-type: application/json' \
+  --data '{
+  "keyboard_layout": "DE",
+  "text": "START\n\t----------\n\tThis is a test.\n\t----------\nEND"
+}'
