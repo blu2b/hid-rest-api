@@ -14,7 +14,6 @@ def type_body():
     layout = "DE" # default german
     if "keyboard_layout" in data:
         layout = data["keyboard_layout"].upper()
-    time.sleep(1)
     type_text(text, layout)
     return {"status": "ok", "typed": text, "keyboard layout": layout}, 200
 
