@@ -1,0 +1,12 @@
+[Unit]
+Description=HID REST API
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 [PATH/TO/server.py]
+WorkingDirectory= [PATH/TO/A/WORKING_DIRECTORY]
+Restart=always
+User=[USER]
+
+[Install]
+WantedBy=multi-user.target
